@@ -1,268 +1,130 @@
-# Professional Portfolio - Advanced HTML & CSS
+# Homepage
 
-A production-ready, fully responsive portfolio website built with semantic HTML5, advanced CSS3, and vanilla JavaScript. This project demonstrates mastery of modern web development best practices including accessibility compliance, mobile-first design, and performance optimization.
+A responsive, accessible homepage built with semantic HTML, CSS, and JavaScript. This project showcases web development best practices including accessible design, mobile-first layout, and modern CSS techniques.
 
-## Features
+## What's Included
 
-### HTML & Semantics
-- Semantic HTML5 markup with proper document structure
-- WAI-ARIA labels and roles for enhanced accessibility
-- Proper heading hierarchy and landmark elements
-- Keyboard-navigable interface with visible focus indicators
-- Screen reader optimized with descriptive alt text
+- Clean semantic HTML structure
+- Fully responsive layout (works on all screen sizes)
+- Keyboard navigation support
+- High contrast colors for readability
+- No external libraries or frameworks
+- Simple, maintainable code
 
-### Responsive Design
-- Mobile-first approach with progressive enhancement
-- Three-tier responsive layout: mobile (320px), tablet (768px), desktop (1024px)
-- No horizontal scroll at any viewport
-- Fluid typography and spacing using CSS variables
-- Touch-friendly interface elements
+## How It Works
 
-### Advanced CSS
-- CSS Custom Properties (variables) for consistent design system
-- CSS Grid for complex project gallery layouts
-- Flexbox for flexible component layouts
-- CSS transitions and transforms for smooth interactions
-- Responsive images with proper aspect ratio handling
-- Print styles for optimal PDF output
+The site uses:
 
-### Accessibility (WCAG 2.1 AA)
-- Color contrast ratios meet WCAG AA standards
-- Focus visible on all interactive elements
-- Form labels properly associated with inputs
-- ARIA attributes for dynamic content
-- Keyboard-only navigation fully supported
-- Reduced motion preferences respected
+- **HTML** for page structure with semantic elements
+- **CSS** for styling with a mobile-first approach
+- **JavaScript** for interactive features like the mobile menu
 
-### Performance
-- No external dependencies (vanilla JavaScript)
-- Optimized CSS with minimal specificity
-- Efficient event delegation and listeners
-- Lazy-loaded images with loading="lazy"
-- Minimal repaints and reflows
-- Lighthouse score target: ≥ 90
+## Responsive on All Devices
 
-## Project Structure
+- Mobile phones (320px and up)
+- Tablets (768px and up)
+- Desktops (1024px and up)
+- Large screens (1920px and up)
 
-```
-professional-portfolio/
-├── index.html          # Main HTML document
-├── styles.css          # All styling (no SASS/LESS required)
-├── script.js           # Vanilla JavaScript
-├── README.md           # This file
-└── CHECKLIST.md        # Validation checklist
+No content gets cut off horizontally on any screen size.
+
+## Accessible to Everyone
+
+- Works with keyboard navigation
+- Colors have good contrast for visibility
+- Compatible with screen readers
+- Focus indicators visible when using Tab key
+- Images have descriptive alt text
+
+## Getting Started
+
+### Opening Locally
+
+1. Clone or download this repository
+2. Open `index.html` in your web browser
+
+### Using a Local Server
+
+For a more realistic experience:
+
+```bash
+python3 -m http.server 8000
 ```
 
-## Responsive Breakpoints
+Then visit http://localhost:8000
 
-```css
-Mobile:   < 768px
-Tablet:   768px - 1024px
-Desktop:  > 1024px
-Ultra HD: > 1920px
-```
+## Files
 
-## CSS Variables (Design Tokens)
-
-All colors, spacing, typography, and effects are defined as CSS variables in `:root` for easy customization:
-
-```css
---color-primary: #2563eb
---color-text: #1f2937
---spacing-base: 1rem
---font-family: 'Inter', system fonts
-```
-
-Edit `:root` in `styles.css` to rebrand the entire site.
-
-## Accessibility Features
-
-### Keyboard Navigation
-- Tab through all interactive elements
-- Enter/Space to activate buttons
-- Escape to close mobile menu
-- Arrow keys work in custom controls
-
-### Screen Reader Support
-- Semantic landmarks (header, nav, main, footer)
-- ARIA live regions for dynamic updates
-- Alt text on all images
-- Form labels properly associated
-- Skip to main content capability
-
-### Visual Accessibility
-- 4.5:1 minimum contrast ratio
-- Focus indicators on all focusable elements
-- High-resolution icon scalability
-- Support for prefers-reduced-motion
-
-## Browser Support
-
-- Chrome (latest 2 versions)
-- Firefox (latest 2 versions)
-- Safari (latest 2 versions)
-- Edge (latest 2 versions)
-- iOS Safari 12+
-- Chrome Android
+- `index.html` - The webpage
+- `styles.css` - All styling
+- `script.js` - Interactive features
+- `README.md` - This guide
 
 ## Testing
 
-### Manual Testing Checklist
-- [ ] Resize window from 320px to 1920px - no layout breaks
-- [ ] Test with keyboard only - all features accessible
-- [ ] Test with screen reader (NVDA, JAWS, VoiceOver)
-- [ ] Verify focus indicators visible on all interactive elements
-- [ ] Check color contrast with WebAIM Contrast Checker
-- [ ] Test on actual mobile devices (not just dev tools)
+### On Your Computer
 
-### Automated Testing
-```bash
-# Lighthouse audit
-# 1. Open DevTools (F12)
-# 2. Go to Lighthouse tab
-# 3. Run audit (target: Accessibility ≥ 90, Performance ≥ 85)
+Resize your browser window to test different screen sizes:
+- Small phone: 320px wide
+- Tablet: 768px wide
+- Desktop: 1024px+ wide
 
-# W3C HTML Validation
-# https://validator.w3.org/
-```
+### With Your Keyboard
 
-## Performance Optimization
+- Use **Tab** to move between buttons and links
+- Use **Enter** or **Space** to click buttons
+- Use **Escape** to close the menu on mobile
 
-### Current Optimizations
-- Minified CSS (production ready)
-- Minimal JavaScript (no frameworks)
-- SVG placeholders instead of image files
-- CSS Grid instead of media queries for layout
-- Hardware-accelerated transforms
+### Colors and Text
 
-### Future Optimization
-- Image optimization pipeline (WebP conversion)
-- Critical CSS extraction
-- Code splitting for JavaScript
-- Service worker for offline support
+Text is large and easy to read. Dark text on a light background makes it accessible to everyone.
 
-## Customization Guide
+## Customization
 
-### Change Brand Colors
-Edit `:root` in `styles.css`:
+### Change Colors
+
+Open `styles.css` and look for the `:root` section at the top. Change these values:
+
 ```css
 :root {
-  --color-primary: #your-color;
-  --color-primary-dark: #darker-shade;
-  --color-primary-light: #lighter-shade;
+  --color-primary: #2563eb;
+  --color-text: #1f2937;
 }
 ```
 
-### Change Typography
-```css
-:root {
-  --font-family: 'Your Font', fallbacks;
-  --font-size-base: 1rem;
-}
-```
+### Change Fonts
 
-### Adjust Spacing
-```css
-:root {
-  --spacing-base: 1rem;
-  --spacing-lg: 1.5rem;
-}
-```
+In `styles.css`, update the `--font-family` variable.
 
-### Add New Section
-1. Create semantic HTML structure
-2. Add new CSS section with mobile-first approach
-3. Include media queries for tablet/desktop
-4. Test for accessibility and responsiveness
+### Add More Projects
+
+Open `index.html` and duplicate a project card in the projects section. Update the title, description, and link.
+
+## Browser Compatibility
+
+Works on:
+- Chrome and Edge (all recent versions)
+- Firefox (all recent versions)
+- Safari (all recent versions)
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
 ## Deployment
 
-### GitHub Pages
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/username/professional-portfolio.git
-git push -u origin main
-```
+To share your site with others:
 
-Enable GitHub Pages in repository settings (main branch, / root).
+1. Push to GitHub
+2. Go to Settings > Pages
+3. Select "main branch" as the source
+4. Your site will be live at `https://yourusername.github.io/Project-Homepage`
 
-### Performance Checklist Before Deploy
-- [ ] Run Lighthouse audit (target: ≥ 90 all categories)
-- [ ] W3C HTML validation passes
-- [ ] W3C CSS validation passes
-- [ ] No console errors or warnings
-- [ ] Responsive test on real devices
-- [ ] Accessibility audit with WAVE or Axe
-- [ ] Page load time < 3 seconds
+## Questions?
 
-## Code Quality
+Check the code:
+- Simple HTML structure in `index.html`
+- All styling organized in `styles.css`
+- Interactive code in `script.js`
 
-### HTML Standards
-- Valid HTML5 (W3C validated)
-- Semantic elements used correctly
-- No div soup or unnecessary wrappers
-- Proper nesting and hierarchy
-
-### CSS Standards
-- DRY principles (no repeated code)
-- BEM-inspired naming convention
-- Mobile-first media queries
-- No layout shifts or reflows
-
-### JavaScript Standards
-- Vanilla JavaScript (no frameworks)
-- Event delegation where appropriate
-- Progressive enhancement
-- No global variables
-
-## Browser DevTools Tips
-
-### Lighthouse Audit
-1. Open DevTools (F12)
-2. Click "Lighthouse" tab
-3. Run audit
-4. Review accessibility, performance, and best practices
-
-### Responsive Design Mode
-1. DevTools → Toggle device toolbar (Ctrl+Shift+M)
-2. Test at 320px, 768px, 1024px, 1920px
-3. Verify no horizontal scrollbar
-
-### Accessibility Inspector
-1. DevTools → Inspector
-2. Right-click element → Inspect Accessibility Tree
-3. Verify ARIA roles and labels
-
-## Common Issues & Solutions
-
-### Issue: Menu doesn't close on mobile
-**Solution:** Check that `script.js` is loaded and `menuToggle` ID exists on button
-
-### Issue: Images distorted at certain widths
-**Solution:** Ensure images use `aspect-ratio` or intrinsic aspect ratio in HTML
-
-### Issue: Keyboard navigation skips elements
-**Solution:** Check that all interactive elements are properly focused (no `outline: none`)
-
-### Issue: Lighthouse accessibility score low
-**Solution:** Run axe DevTools extension, check contrast ratios and ARIA labels
-
-## Future Enhancements
-
-- [ ] Dark mode toggle
-- [ ] Animation preferences
-- [ ] Internationalization (i18n)
-- [ ] Cookie consent banner
-- [ ] Contact form with validation
-- [ ] Blog section with filtering
-- [ ] Social media feed integration
-- [ ] Service worker for offline support
-
-## Credits
-
-Built as a demonstration of advanced HTML and CSS concepts including semantic markup, accessibility compliance, responsive design, and modern CSS techniques.
+Everything is well-commented and easy to understand.
 
 ## License
 
