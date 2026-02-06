@@ -1,0 +1,28 @@
+# 🔗 ENLACE PARA ABRIR EN NAVEGADOR
+
+## ⭐ COPIA Y PEGA ESTO EN TU NAVEGADOR:
+
+```
+http://localhost:8000
+```
+
+---
+
+## O haz click aquí (si tu cliente soporta):
+
+[**http://localhost:8000**](http://localhost:8000)
+
+---
+
+## 📋 Otros enlaces de documentación:
+
+- **Auditoría The Odin Project:** http://localhost:8000/ODIN_PROJECT_AUDIT.md
+- **Instrucciones:** http://localhost:8000/START_HERE.md
+- **Testing Results:** http://localhost:8000/TESTING_RESULTS.md
+- **Índice:** http://localhost:8000/INDEX.md
+
+---
+
+**¡El servidor está activo y listo!**
+
+Simplemente copia `http://localhost:8000` en tu navegador Chrome, Firefox, Safari o Edge.

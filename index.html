@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A showcase of web development projects and professional experience">
+  <meta name="theme-color" content="#ffffff">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Navigation -->
+    <header class="header">
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar__container">
+          <a href="#" class="logo" aria-label="Homepage">
+            <span class="logo__text">Homepage</span>
+          </a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="navbar__list" id="navMenu">
+            <li><a href="#about" class="navbar__link">About</a></li>
+            <li><a href="#projects" class="navbar__link">Projects</a></li>
+            <li><a href="#skills" class="navbar__link">Skills</a></li>
+            <li><a href="#contact" class="navbar__link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Hi, I'm a Web Developer</h1>
+          <p class="hero__subtitle">I build responsive, accessible, and performant web experiences.</p>
+          <a href="#projects" class="button button--primary">View My Work</a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section" id="about">
+        <div class="section__inner">
+          <h2 class="section__title">About Me</h2>
+          <div class="about__grid">
+            <div class="about__text">
+              <p>
+                I'm a passionate web developer focused on creating clean, semantic, and accessible code. 
+                With expertise in HTML5, CSS3, and modern JavaScript, I craft digital experiences 
+                that work seamlessly across all devices and screen sizes.
+              </p>
+              <p>
+                My approach emphasizes semantic HTML, accessibility compliance, and mobile-first design principles. 
+                Every project is built with performance and user experience at the forefront.
+              </p>
+            </div>
+            <div class="about__stats">
+              <div class="stat">
+                <span class="stat__number">3+</span>
+                <span class="stat__label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">25+</span>
+                <span class="stat__label">Projects Completed</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">100%</span>
+                <span class="stat__label">Client Satisfaction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section section--alternate" id="projects">
+        <div class="section__inner">
+          <h2 class="section__title">Featured Projects</h2>
+          <div class="projects__grid">
+            
+            <article class="project-card">
+              <div class="project-card__image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%23e5e7eb' width='400' height='250'/%3E%3Ctext x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='24' fill='%236b7280'%3EProject One%3C/text%3E%3C/svg%3E" 
+                     alt="Project One: E-commerce platform with cart functionality and payment integration">
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">E-Commerce Platform</h3>
+                <p class="project-card__description">
+                  A fully responsive e-commerce site built with semantic HTML and modern CSS Grid. 
+                  Features include product filtering, shopping cart, and checkout flow.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="#" class="link-icon" aria-label="View live project">
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="#" class="link-icon" aria-label="View source code on GitHub">
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%23dbeafe' width='400' height='250'/%3E%3Ctext x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='24' fill='%231e40af'%3EProject Two%3C/text%3E%3C/svg%3E" 
+                     alt="Project Two: Task management application with drag-and-drop interface">
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">Task Manager App</h3>
+                <p class="project-card__description">
+                  Interactive task management application with drag-and-drop functionality. 
+                  Full keyboard navigation support and ARIA labels for complete accessibility.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="#" class="link-icon" aria-label="View live project">
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="#" class="link-icon" aria-label="View source code on GitHub">
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%23dcfce7' width='400' height='250'/%3E%3Ctext x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='24' fill='%23166534'%3EProject Three%3C/text%3E%3C/svg%3E" 
+                     alt="Project Three: Weather dashboard displaying real-time weather data">
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">Weather Dashboard</h3>
+                <p class="project-card__description">
+                  Real-time weather application with location-based forecasting. Responsive design adapts 
+                  seamlessly from mobile to desktop with optimized performance metrics.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">API Integration</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="#" class="link-icon" aria-label="View live project">
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="#" class="link-icon" aria-label="View source code on GitHub">
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%23fce7f3' width='400' height='250'/%3E%3Ctext x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='24' fill='%239f1239'%3EProject Four%3C/text%3E%3C/svg%3E" 
+                     alt="Project Four: Portfolio website with showcase gallery">
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">Design Portfolio</h3>
+                <p class="project-card__description">
+                  Minimal design portfolio site showcasing creative work. Built with advanced CSS techniques 
+                  including animations, transitions, and a modern color palette.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3 Animations</span>
+                  <span class="tag">Responsive</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="#" class="link-icon" aria-label="View live project">
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="#" class="link-icon" aria-label="View source code on GitHub">
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%23fef3c7' width='400' height='250'/%3E%3Ctext x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='24' fill='%23b45309'%3EProject Five%3C/text%3E%3C/svg%3E" 
+                     alt="Project Five: Blog platform with markdown support">
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">Blog Platform</h3>
+                <p class="project-card__description">
+                  Full-featured blogging platform with semantic HTML article structure. 
+                  Search functionality, categorization, and optimized for accessibility and SEO.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">Search/Filter</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="#" class="link-icon" aria-label="View live project">
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="#" class="link-icon" aria-label="View source code on GitHub">
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%23e0e7ff' width='400' height='250'/%3E%3Ctext x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-size='24' fill='%233730a3'%3EProject Six%3C/text%3E%3C/svg%3E" 
+                     alt="Project Six: Social network interface with messaging system">
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">Social Network UI</h3>
+                <p class="project-card__description">
+                  Modern social network interface with messaging, profiles, and feed system. 
+                  Complex responsive layout demonstrating advanced CSS Grid techniques.
+                </p>
+                <div class="project-card__tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS Grid</span>
+                  <span class="tag">Flexbox</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="#" class="link-icon" aria-label="View live project">
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="#" class="link-icon" aria-label="View source code on GitHub">
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="section" id="skills">
+        <div class="section__inner">
+          <h2 class="section__title">Technical Skills</h2>
+          <div class="skills__grid">
+            <div class="skill-group">
+              <h3 class="skill-group__title">Frontend</h3>
+              <ul class="skill-list">
+                <li>HTML5 Semantic Markup</li>
+                <li>CSS3 (Grid, Flexbox, Animations)</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title">Accessibility</h3>
+              <ul class="skill-list">
+                <li>WCAG 2.1 Compliance</li>
+                <li>ARIA Labels & Roles</li>
+                <li>Keyboard Navigation</li>
+                <li>Screen Reader Testing</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title">Tools & Practices</h3>
+              <ul class="skill-list">
+                <li>Git & GitHub</li>
+                <li>Web Performance Optimization</li>
+                <li>SEO Best Practices</li>
+                <li>Cross-browser Testing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section section--alternate" id="contact">
+        <div class="section__inner">
+          <h2 class="section__title">Get In Touch</h2>
+          <div class="contact__wrapper">
+            <p class="contact__text">
+              I'm always interested in hearing about new opportunities and interesting projects. 
+              Feel free to reach out using any of the methods below.
+            </p>
+            <div class="contact__methods">
+              <a href="mailto:hello@example.com" class="contact-link" aria-label="Send email">
+                <span class="contact-link__label">Email</span>
+                <span class="contact-link__value">hello@example.com</span>
+              </a>
+              <a href="https://github.com" class="contact-link" aria-label="Visit GitHub profile" rel="noopener noreferrer" target="_blank">
+                <span class="contact-link__label">GitHub</span>
+                <span class="contact-link__value">github.com/yourname</span>
+              </a>
+              <a href="https://linkedin.com" class="contact-link" aria-label="Visit LinkedIn profile" rel="noopener noreferrer" target="_blank">
+                <span class="contact-link__label">LinkedIn</span>
+                <span class="contact-link__value">linkedin.com/in/yourname</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="footer__text">&copy; 2024 Professional Portfolio. All rights reserved.</p>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Terms of Service</a>
+          <a href="#" class="footer__link">Back to Top</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
